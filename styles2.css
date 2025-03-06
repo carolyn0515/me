@@ -1,0 +1,20 @@
+body {
+    background-image: url('./img2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: pointer;
+}
+
+/* 클릭 텍스트 */
+.click-text {
+    text-align: center;
+    position: absolute;
+    color: #1A00FF;
+    font-family: 'Georgia', serif;
+    font-size: 5vw;
+    top: 42%;
+    left: 50%;
+    transform: translate(10%, 130%) rotate(-56deg); /* translate와 rotate를 transform 속성 안에서 사용 */
+}

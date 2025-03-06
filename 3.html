@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="square" onmouseover="changeText(this, '1.Asking why<br>2.Writing question<br>')" onmouseout="restoreText(this)">Journey to Curiosity</div>
+        <div class="square_" onmouseover="changeText(this, '1.Realization(question note)<br>2.Why not?<br>3.Begin in a small way')" onmouseout="restoreText(this)">Creativity in Action</div>
+        <div class="square_" 
+        onmouseover="changeText(this, '<div>Design, Math, Computer</div><div>Data Science + Frontend + mobile system engineering</div>')" onmouseout="restoreText(this)">Balancing Dreams and Reality</div>
+        <div class="square" onmouseover="changeText(this, 'Create My Own Style')" onmouseout="restoreText(this)">Innovative Mindset</div>
+    </div>
+
+    <script>
+        function changeText(element, newText) {
+            element.dataset.originalText = element.innerHTML;  // 원래 텍스트 저장
+            element.innerHTML = newText;  // 새로운 텍스트로 변경
+        }
+
+        function restoreText(element) {
+            element.innerHTML = element.dataset.originalText;  // 원래 텍스트 복원
+        }
+    </script>
+</body>

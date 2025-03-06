@@ -1,0 +1,62 @@
+/*1st*/
+
+body {
+    background-color: #1A00FF;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: -200px;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.name{
+    font-size: 30rem;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.oval {
+    width: 450px;  /* 가로 크기 */
+    height: 270px; /* 세로 크기 */
+    background-color: #FF7B00; /* 주황색 */
+    border-radius: 50%; /* 타원형 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%) rotate(-15deg); /* 가운데 정렬 + 기울이기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.click-text {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    color: white;
+    font-size: 2.5rem;
+    transform: translate(-10%) rotate(-10deg);
+}
+
+.zoom-out {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 1.5s ease-in-out;
+}
